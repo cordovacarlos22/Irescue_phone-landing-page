@@ -24,8 +24,8 @@ body{
 .nav_menu{
     display: inline-flex;
     float: right;
-    padding-left: 10px;
-    margin: 10px;
+    padding-left: 12px;
+    margin: 15px;
     }
 
 .nav_item{
@@ -37,6 +37,7 @@ body{
 .nav_item:hover{
     color: rgb(130, 130, 249);
     cursor: pointer;
+    transform:translate(-2px,-2px);
 }
 
 /* header img*/
@@ -54,14 +55,14 @@ body{
 /*header*/
 .header_title{
     position: absolute;
-    width: 1045px;
+    width: 60%;
     height: 51px;
-    left: 285px;
+    left: 325px;
     top: 200px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.011em;
@@ -70,7 +71,7 @@ body{
 
 .header_slogan{
     position: absolute;
-    width: 776px;
+    width: 50%;
     height: 51px;
     left: 420px;
     top: 275px;
@@ -85,8 +86,8 @@ body{
 }
 
 .header_botton{
-    position: relative;
-    width: 214px;
+    position: absolute;
+    width: 20%;
     height: 67px;
     left: 685px;
     top: 400px;
@@ -95,6 +96,15 @@ body{
     border-radius: 10px;
 }
 
+.header_botton:hover{
+    transform:translate(-2px,-2px);
+    cursor: pointer;
+}
+
+.header_botton:active{
+    transform:translate(2px,2px);
+
+}
 .botton_paragraph{
     padding: 12px;
     text-align: center;
@@ -102,17 +112,24 @@ body{
     font-size: 30px;
 }
 
+
+
 .botton_item{
     cursor: pointer;
     text-decoration: none;
     color: #FFF;
 }
 
+.botton_item:hover{
+    color: rgb(130, 130, 249);
+    
+}
+
 /*SEECTION 1 */
 
 .contaner1_title{
     position: absolute;
-    width: 327px;
+    width: 25%;
     height: 84px;
     left: 644px;
     top: 600px;
@@ -124,32 +141,35 @@ body{
     letter-spacing: -0.019em;
     color: #676464;
     text-align: center;
+    padding: 5px;
 }
 
 .container1_item1{
     position: absolute;
-width: 392px;
+width: 25%;
 height: 57px;
-left: 104px;
+left: 10%;
 top: 725px;
+padding: 5px;
+max-resolution: 5px;
 }
 
 .container1_item2{
     position: absolute;
     align-items: center;
     justify-content: center;
-    width: 430px;
+    width: 25%;
     height: 67px;
-    left: 598px;
+    left: 40%;
     top: 725px;
 }
 
 .container1_item3{
     position: absolute;
     float: right;
-    width: 231px;
+    width: 25%;
     height: 67px;
-    left: 1188px;
+    left: 80%;
     top: 725px;
 }
 
@@ -175,7 +195,7 @@ top: 725px;
 
 .main_container2{
     position: absolute;
-    width: 1488px;
+    width: 85%;
     height: 200px;
     left: 150px;
     top: 850px;
@@ -185,7 +205,7 @@ top: 725px;
 
 .contaner2_title{
 position: absolute;
-width: 815px;
+width: 50%;
 height: 109px;
 left: 417px;
 font-family: 'Inter';
@@ -199,7 +219,7 @@ text-align: center;
 
 .container2_item1{
     position: absolute;
-width: 405px;
+width: 25%;
 height: 48px;
 left: 119px;
 top: 100px;
@@ -207,7 +227,7 @@ top: 100px;
 
 .container2_item2{
     position: absolute;
-width: 405px;
+width: 25%;
 height: 48px;
 left: 594px;
 top: 100px;
@@ -215,7 +235,7 @@ top: 100px;
 
 .container2_item3{
     position: absolute;
-width: 447px;
+width: 25%;
 height: 48px;
 left: 1038px;
 top: 100px;
