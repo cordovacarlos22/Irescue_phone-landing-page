@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
@@ -10,13 +11,14 @@ body{
 
 /* NAV BAR */
 .nav_background{
-    overflow: hidden;
+    
     position: fixed;
     width: 100%;
     height: 5vh;
     overflow: hidden;
     background-color: #333;
     top: 0; 
+    z-index: 1;
   
     
 }
@@ -44,12 +46,12 @@ body{
 
 .header_img{
     position: absolute;
-    background: url(./apple-macbook-self-repair.jpg.webp);
+    background: url(./images/apple-macbook-self-repair.jpg.webp);
     width: 100%;
-    height:50%;
+    height:55%;
     background-repeat: no-repeat;
     background-size:100%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 /*header*/
