@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    
 }
 
 body{
+    overflow-x: hidden;
 
+}
+
+main{
+   
 }
 
 /* NAV BAR */
@@ -14,12 +19,28 @@ body{
     
     position: fixed;
     width: 100%;
-    height: 5vh;
+    height: 5%;
     overflow: hidden;
     background-color: #333;
     top: 0; 
     z-index: 1;
   
+    
+}
+
+.page_icon{
+    cursor: pointer;
+}
+
+.nav_icon{
+    position: absolute;
+    background-size: ;
+    height: 90%;
+    width: 4%;
+    margin: auto;
+    top: 4%;
+    left: 5%;
+    
     
 }
 
@@ -52,6 +73,7 @@ body{
     background-repeat: no-repeat;
     background-size:100%;
     margin-top: 40px;
+    z-index: -1;
 }
 
 /*header*/
@@ -134,7 +156,7 @@ body{
     width: 25%;
     height: 84px;
     left: 644px;
-    top: 600px;
+    top: 620px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -164,6 +186,8 @@ max-resolution: 5px;
     height: 67px;
     left: 40%;
     top: 725px;
+    padding: 5px;
+    
 }
 
 .container1_item3{
@@ -190,19 +214,22 @@ max-resolution: 5px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 20px;
     letter-spacing: -0.019em;
     color: #676464;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 .main_container2{
     position: absolute;
-    width: 85%;
+    width: 90%;
     height: 200px;
-    left: 150px;
-    top: 850px;
-    background: #454A48;
+    left: 100px;
+    top: 900px;
+    background: #cdcece;
     border-radius: 50px;
+    
 }
 
 .contaner2_title{
@@ -210,12 +237,13 @@ position: absolute;
 width: 50%;
 height: 109px;
 left: 417px;
+top:10px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
 font-size: 64px;
-line-height: 77px;
-color: #fff;
+line-height: 50px;
+color:#676464;;
 text-align: center;
 }
 
@@ -225,6 +253,7 @@ width: 25%;
 height: 48px;
 left: 119px;
 top: 100px;
+color: #fff;
 }
 
 .container2_item2{
@@ -233,6 +262,7 @@ width: 25%;
 height: 48px;
 left: 594px;
 top: 100px;
+color: #fff;
 }
 
 .container2_item3{
@@ -241,4 +271,16 @@ width: 25%;
 height: 48px;
 left: 1038px;
 top: 100px;
+color: #fff;
+}
+
+.container2_paragraph{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.019em;
+    color: #676464;
+    padding: 2px;
 }
