@@ -45,12 +45,16 @@ main{
 }
 
 .nav_menu{
+    position:relative;
+    left: 15%;
     display: inline-flex;
-    float: right;
     padding-left: 12px;
     margin: 15px;
+    line-break: normal;
+
     }
 
+  
 .nav_item{
     color: aliceblue;
     font-size: 18px;
@@ -62,6 +66,26 @@ main{
     cursor: pointer;
     transform:translate(-2px,-2px);
 }
+
+.nav_login{
+    float: right;
+    padding-left: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    padding-left: 12px;
+    margin: 15px;
+    }
+
+    .nav_login{
+        color: aliceblue;
+        font-size: 18px;
+        text-decoration: none;
+    }   
+    
+    .nav_login:hover{
+        color: rgb(130, 130, 249);
+        cursor: pointer;
+        transform:translate(-2px,-2px);}
 
 /* header img*/
 
