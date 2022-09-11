@@ -23,7 +23,7 @@ main{width: 100%;
     
     position: fixed;
     width: 100%;
-    height: 5%;
+    height: 10%;
     overflow: hidden;
     background-color: #333;
     top: 0; 
@@ -38,8 +38,8 @@ main{width: 100%;
 
 .nav_icon{
     position: absolute;
-    background-size: ;
-    height: 90%;
+    background-size: 5px;
+    height: 95%;
     width: 4%;
     margin: auto;
     top: 4%;
@@ -49,13 +49,14 @@ main{width: 100%;
 }
 
 .nav_menu{
+    display:inline-flex;
     position:relative;
     left: 15%;
-    display: inline-flex;
+    top: 10%;
     padding-left: 12px;
-    margin: 15px;
+    margin-top: 40px;
     line-break: normal;
-
+    justify-content:space-between;
     }
 
   
@@ -84,6 +85,7 @@ main{width: 100%;
         color: aliceblue;
         font-size: 18px;
         text-decoration: none;
+        margin-top: 40px;
     }   
     
     .nav_login:hover{
