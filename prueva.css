@@ -1,11 +1,837 @@
+@@ -1,140 +1,99 @@
+:root{
+    --nav-color:#333;
+    --white:#fff
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+
+/* NAV BAR */
+nav{
+    position: fixed;
+    display: flex;
+    overflow-x: hidden;
+   
+    justify-content: center;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;   
+    padding: 5px;
+    z-index: 1;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+   
+   
+}
+
+/* NAV BAR */
+.nav_background{    
+    
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    background-color: #333;
+    top: 0; 
+    z-index: 1;
+  
+     width: 100%;
+    background-color: var(--nav-color);
+    
+}
+
+.page_icon{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.nav_icon{
+    position: absolute;
+    background-size: 5px;
+    height: 95%;
+    width: 4%;
+    margin: auto;
+    top: 4%;
+    left: 5%;
+    
+    
+
+
+
+.nav-sub-menu{
+    list-style: none;
+
+}
+
+.nav_menu{
+    display:inline-flex;
+    position:relative;
+    left: 15%;
+    top: 10%;
+    padding-left: 12px;
+    margin-top: 40px;
+    line-break: normal;
+    justify-content:space-between;
+    }
+    display: inline;
+    
+}
+
+  
+.nav_item{
+    color: aliceblue;
+    color:var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+
+}   
+
+.nav_item:hover{
+    color: rgb(130, 130, 249);
+    cursor: pointer;
+    transform:translate(-2px,-2px);
+}
+
+
+    transform:translate(-2px,-2px);}
+
+.nav_login{
+    float: right;
+    padding-left: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    padding-left: 12px;
+    margin: 15px;
+    }
+
+    .nav_login{
+        color: aliceblue;
+        font-size: 18px;
+        text-decoration: none;
+        margin-top: 40px;
+    }   
+    
+    .nav_login:hover{
+        color: rgb(130, 130, 249);
+        cursor: pointer;
+        transform:translate(-2px,-2px);}
+
+/* header img*/
+header{ width: 100%;
+  }
 
 .header_img{
-    position:sticky;
-    background-image:  url(./ages/apple-macbook-self-repair.jpg.webp);
+    position: absolute;
+    background-image: url(./images/header_background.jpeg);
+    width: 100vw;
+    height:65vh;
+.nav_container{
+    background-image: url(./images/header_background.png);
     width: 100%;
-    height:50%;
+    height:600px;
     background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 40px;
+    background-size:100%;
     
+    z-index: -1;
+    background-size:100%;  
+    background-position: center;
+    filter: brightness(65%);
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+    
+}
+
+/*header*/
+.header_title{
+    position: absolute;
+    width: 60%;
+    height: 51px;
+    left: 325px;
+    top: 200px;
+    margin:30px;
+    filter: brightness(100%);    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    font-size: 60px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #FFFFFF;
+    
+    color:var(--white);
+}
+
+.header_slogan{
+    position: absolute;
+    width: 50%;
+    height: 51px;
+    left: 420px;
+    top: 275px;
+@ -142,614 +101,77 @@ main{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #fff;
+    color:var(--white);
+}
+
+.header_botton{
+    position: absolute;
+    width: 20%;
+    height: 67px;
+    left: 685px;
+    top: 375px;
+}
+
+.header_botton:hover{
+    transform:translate(-2px,-2px);
+    cursor: pointer;
+}
+
+.header_botton:active{
+    transform:translate(2px,2px);
+
+}
+.botton_paragraph{
+    padding: 12px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+
+.botton_item{
+    cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    display: block;
+    filter: brightness(90%);
+}
+
+.botton_item:hover{
+    background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+            
+   
+     
+    
+}
+
+/*SEECTION 1 */
+
+.section_1{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contaner1_title{
+    position: absolute;
+    width: 25%;
+    height: 84px;
+    left: 700px;
+    top: 660px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 32px;
+    letter-spacing: -0.019em;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-transform:uppercase ; 
+    font-weight: 700;
+}
+
+.container1_item1{
+position: absolute;
+width: 25%;
+height: 57px;
+left: 15%;
+top: 725px;
+padding: 5px;
+
+}
+
+.container1_item2{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 67px;
+    left: 40%;
+    top: 725px;
+    padding: 5px;
+    
+}
+
+.container1_item3{
+    position: absolute;
+    float: right;
+    width: 25%;
+    height: 67px;
+    left: 60%;
+    top: 727px;
+}
+
+.container1_header{
+    Font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 32px;
+    letter-spacing: -0.019em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.container1_paragraph{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.019em;
+    color: #676464;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.section_2{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.main_container2{
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    left: 100px;
+    top: 900px;
+   
+    border-radius: 50px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    filter: brightness(90%);
+}
+
+.contaner2_title{
+position: absolute;
+width: 50%;
+height: 109px;
+left: 417px;
+top:10px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 50px;
+color:black;;
+text-align: center;
+}
+
+.container2_item1{
+    position: absolute;
+width: 25%;
+height: 48px;
+left: 119px;
+top: 100px;
+color: #fff;
+}
+
+.container2_item2{
+    position: absolute;
+width: 25%;
+height: 48px;
+left: 594px;
+top: 100px;
+color: #fff;
+}
+
+.container2_item3{
+    position: absolute;
+width: 25%;
+height: 48px;
+left: 1038px;
+top: 100px;
+color: #fff;
+}
+
+.container2_paragraph{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.019em;
+    color: #fff;
+    padding: 2px;
+}
+
+/* ||SERVICES WE PROVIDE*/
+
+
+aside h1{
+    margin: 0 auto;
+position: absolute;
+width: 65%;
+height: 54px;
+left: 650px;
+top: 1250px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 32px;
+/* or 67% */
+letter-spacing: -0.019em;
+color: black;
+font-weight: 700;
+text-transform: uppercase;
+margin: 0 auto;
+}
+
+aside div{
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(3,200px);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    
+   
+    
+}
+ /* Screen Repair */
+.item_1{
+position: absolute;
+width: 347px;
+height: 73px;
+left: 675px;
+top: 1331px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+ /* Baterry Replacement */
+.item_2{
+   position: absolute;
+width: 347px;
+height: 73px;
+left: 1000px;
+top: 1331px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+/* Camera replacement */
+.item_3{
+position: absolute;
+width: 347px;
+height: 73px;
+left: 675px;
+top: 1404px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+ /* Water damaged */
+
+.item_4{
+position: absolute;
+width: 347px;
+height: 73px;
+left: 1000px;
+top: 1404px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+ /* Wifi/Bluetooh */
+.item_5{
+position: absolute;
+width: 347px;
+height: 73px;
+left: 675px;
+top: 1477px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+ /* Home Botton */
+
+.item_6{
+position: absolute;
+width: 347px;
+height: 73px;
+left: 1000px;
+top: 1477px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+
+}
+/* Charging ports */
+.item_7{
+position: absolute;
+width: 347px;
+height: 73px;
+left: 675px;
+top: 1550px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+   /* Side bottons */
+.item_8{
+position: absolute;
+width: 347px;
+height: 73px;
+left: 1000px;
+top: 1550px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+/* MediasQueries */
+
+.item_1,
+.item_2,
+.item_3,
+.item_4,
+.item_5,
+.item_6,
+.item_7,
+.item_8{
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+}
+/* Extra small devices (phones, 600px and less) */
+
+/* ||section 3 / standards*/
+
+.standards{
+    display: flex;
+    
+    width: 50%;
+    height: 100vh;
+}
+  /* home icon */
+.standards_home-icon{
+ position: relative;
+width: 6rem;
+height: 100px;
+left: 107px;
+top: 1010px;
+}
+@media only screen and (max-width: 600px) {
+    .nav-sub-menu{
+        display: none;
+    }
+    .header_img{
+        position: relative;
+        top: -90px;
+
+/* Trusted by 2M+ Households */
+.standards_paragraph1{
+position: absolute;
+width: 217px;
+height: 94px;
+left: 230px;
+top: 1720px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+    }
+
+  /* phone icon */
+.standards_phone_icon{
+position: relative;
+width: 82px;
+height: 101px;
+left: 462px;
+top: 1010px;
+}
+
+/* 5 Star Technician Rating */
+.standards_paragraph2{
+position: absolute;
+width: 212px;
+height: 100px;
+left: 660px;
+top: 1720px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+
+/* check icon */
+.standards_check-icon{
+position: relative;
+width: 71px;
+height: 111px;
+left: 784px;
+top:1010px;
+}
+
+  /* Background Checked Technicians */
+  .standards_paragraph3{
+  position: absolute;
+width: 225px;
+height: 115px;
+left: 1080px;
+top: 1720px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 320px)  {
+    .nav_container{
+        position: relative;
+        top: -158px;
+
+/* shield icon */
+.standards_shield-icon{
+position: relative;
+width: 105px;
+height: 115px;
+left: 1128px;
+top: 1010px;
+}
+    }
+
+/* 90 Day Service Guaranteed */
+.standards_paragraph4{
+    position: absolute;
+    width: 225px;
+    height: 108px;
+    left: 1520px;
+    top: 1720px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  
+}
+
+
+/* ||id_cards */
+
+.id_cards{
+    display:flex;
+    text-align: center;
+    
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+    
+}
+/* ||id_cards  title */
+.id_cards-title {
+    position: absolute;
+width: 1246px;
+height: 134px;
+left: 300px;
+top: 1832px;
+justify-content: center;
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+color: #000000;
+   }
+/* ||id_card 1*/
+.id_cards1{
+ position: relative;
+width:20%;
+height: 30%;
+left: 290px;
+top: 250px;
+border-radius: 10px;
+ background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+filter: brightness(90%);
+}
+/* ||id_card 2 */
+.id_cards2{
+    position: relative;
+    width: 20%;
+    height: 30%;
+    left: 320px;
+    top: 250px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    filter: brightness(90%);
+}
+/* ||id_card 3  */
+.id_cards3{
+    position: relative;
+    width: 20%;
+    height: 30%;
+    left: 350px;
+    top: 250px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    filter: brightness(90%);
+}
+/* ||id_card avatar */
+.avatar{
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 0 auto;
+}
+    .nav_container{
+        position: relative;
+        top: -110px;
+
+/*  catalog*/
+.catalog_container{
+display:flex;
+
+}
+
+figure > h2{
+    position:absolute;
+        display: flex;
+    top:2200px;
+    left: 700px;
+
+}
+
+figure > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+figure > div > p > a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #000000;
+}
+
+figure > div > p > a:hover{
+    color: rgb(130, 130, 249);
+    cursor: pointer;
+    transform:translate(-2px,-2px);
+
+}
+
+
+
+
+
+
+
+
+
+/* MediasQueries */
+
+/* Extra small devices (phones, 600px and less) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    }
+
+}
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+   
+    .nav_container{
+        position: relative;
+        top: -68px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px){
+
+}
+   
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px){
+
 }

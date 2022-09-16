@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irescue Mobile Repair</title>
-    <link rel="stylesheet" href="inde.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  
+     
     <main>
-        <!--HEADER-->
-        <header role="heading" class="header">
-            <div class="header_img"></div>
-            <h1 class="header_title">Trusted phone repair at your location.</h1>
-            <p class="header_slogan">Phone repair made simple<p/>
-            <div class="header_botton">
-                <p class="botton_paragraph"><a class="botton_item"  href="#">Book Service</a></p>
+          <!--Navegation BAR-->
+    <nav  role="navigation" class="nav_background">
+        <a href="#" class="page_icon"><img class="nav_icon" src="./images/nav_icon.svg" alt="Phone Icon"></a>
+        <ul class="nav-sub-menu">
+            <li class="nav_menu"><a class="nav_item" href="#">Home</a></li>
+            <li class="nav_menu"><a class="nav_item" href="#">Book Service</a></li>
+            <li class="nav_menu"><a class="nav_item" href="#">Locations</a></li>
+            <li class="nav_menu"><a class="nav_item" href="#">Contact Us</a></li>
+            <li class="nav_menu"><a class="nav_item" href="#">Login</a></li>
+        </ul>    
+    </nav>
+       <!--HEADER-->
+         <header  class="header">
+            <div class="nav_container">
+                <h1 class="header_title">Trusted phone repair at your location.</h1>
+                <p class="header_slogan">Phone repair made simple<p/>
+                <div class="header_botton">
+                    <a><p class="botton_paragraph">Book Service</div></p></a>
+                </div>
             </div>
-
-              <!--Navegation BAR-->
-            <nav  role="navigation" class="nav_background">
-                <a href="#" class="page_icon"><img class="nav_icon" src="./images/nav_icon.svg" alt="Phone Icon"></a>
-                <ul class="nav-sub-menu">
-                    <li class="nav_menu"><a class="nav_item" href="#">Home</a></li>
-                    <li class="nav_menu"><a class="nav_item" href="#">Book Service</a></li>
-                    <li class="nav_menu"><a class="nav_item" href="#">Locations</a></li>
-                    <li class="nav_menu"><a class="nav_item" href="#">Contact Us</a></li>
-                    <li class="nav_login">Login</li>
-                </ul>    
-            </nav>
         </header>
         <!--SECTION 1 -->
         <section class="section_1">
@@ -85,6 +85,7 @@
         <section  class="section_3">
             <div class="standards">
                 <img class="standards_home-icon" src="./images/home.svg" alt="home icon">
+                <figcaption>Ontario C</figcaption>
                 <p class="standards_paragraph1">Trusted by 2M+
                     Households</p>
                 <img class="standards_phone_icon" src="./images/phone.svg" alt=" phone icon">
@@ -118,27 +119,65 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis dignissimos totam dolorum quae. Excepturi quo nobis doloremque quasi! Hic accusantium voluptate dolorum labore suscipit nihil aperiam vitae illo iste.</p>
                         </div>
                  </div> 
-                             
+                    
         </section>
+<!--
+        <article class="container_need-repair">
+            <h1 class="container_need-repair-title">Need a Repair?</h1>
+            <p  class="container_need-repair-paragraph">
+                Our mission is to be the neighborhood shop you know to visit for every tech repair need imaginable. Whether it’s a broken screen, muffled speakers, fast-draining batteries, or weak signals, our team of credentialed experts is at the ready to get you the Fix you need.
+                Find your closet store location today to estimate your repair cost and book your fix.</p> 
+               <a><button class="need_repair-button">Book Service</button></a>
+               <a><button class="need_repair-button">Get An Estimate</button></a>
+            
+
+
+        </article>   
         <figure class="catalog_container">
-            <h2 class="catalog_title">Browse Repairs Across Devices</h2>
+              
+        <h2 class="catalog_title">Browse Repairs Across Devices</h2>
             <div class="catalog_item1">
-                <img src="" alt="">
+                <img src="./images/iphone-13.png" alt="iPhone">
                 <p><a href="#">Phone Repair</a> </p>
+                <a href="#"><button class="catalog_botton">Get it Fix</button></a>
 
             </div>
             <div class="catalog_item2">
-                <img src="" alt="">
+                <img src="./images/20200709-tablet-05.webp" alt="Tablet">
                 <p> <a href="#">Tablet Repair</a></p>
-
+                <a href="#"><button class="catalog_botton">Get it Fix</button></a>
             </div>
             <div class="catalog_item3">
-                <img src="" alt="">
+                <img src="./images/200413-ipad-pro-main-cover-cs-343p.webp" alt=" tablets">
                 <p> <a href="#">Ipad Repair</a></p>
-                
+                <a href="#"><button class="catalog_botton">Get it Fix</button></a>
         
             </div>
         </figure> 
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>--> 
+        
     </main>  
 </body>
 </html>
