@@ -1,4 +1,4 @@
-@@ -1,140 +1,99 @@
+
 :root{
     --nav-color:#333;
     --white:#fff
@@ -10,7 +10,7 @@
     
 }
 
-body{
+
 
 /* NAV BAR */
 nav{
@@ -139,8 +139,8 @@ header{ width: 100%;
     background-image: url(./images/header_background.jpeg);
     width: 100vw;
     height:65vh;
-.nav_container{
-    background-image: url(./images/header_background.png);
+    
+.nav_container:{background-image: url(./images/header_background.png);
     width: 100%;
     height:600px;
     background-repeat: no-repeat;
@@ -155,8 +155,7 @@ header{ width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;    
-    
-}
+
 
 /*header*/
 .header_title{
