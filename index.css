@@ -26,6 +26,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 
 }
 
@@ -492,6 +493,7 @@ input[type=text], select, textarea {
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+    overflow: visible;
   }
 
   /* Card app */
@@ -501,6 +503,7 @@ input[type=text], select, textarea {
     margin-top: 65px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
   .card_app-container{
@@ -511,33 +514,70 @@ input[type=text], select, textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+    margin: 10px;
   }
 
   .card_app-link{
-   margin: 10px;
+   
    padding: 10px;
    height: 40px;
    width: 40px;
   }
 
-  .footer{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    align-items: center;
-    padding: 5px;
-    z-index: 1;
-    flex-wrap: wrap;
-    background-color: #203b7b;
-  }
-.footer-icon{
 
+.footer-icon{
+    text-align: center;
     width: 125px;
     height: 75px;
 
 }
 
+.footer_main-container{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    justify-content: space-evenly;
+    background-color: #203b7b;
+    flex-wrap: wrap;
+    
 
+}
+
+.f-list1,
+.f-list2,
+.f-list3{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: var(--white);
+    margin:  15px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+.f-img{
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+
+}
+
+.f_li{
+    display: flex;
+    flex-direction: row;
+}
+.f_icon{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
 /* MediasQueries */
 
 /* Extra small devices (phones, 600px and less) */
