@@ -519,11 +519,13 @@ input[type=text], select, textarea {
   }
 
   .card_app-link{
-   
-   padding: 10px;
+    padding: 10px;
    height: 40px;
    width: 40px;
   }
+   
+   
+  
 
 
 .footer-icon{
