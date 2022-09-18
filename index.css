@@ -48,6 +48,9 @@ nav {
 #nav-search {
     padding: 5px;
     margin-right: 5px;
+    width: 250px;
+    border-radius: 20px;
+    border: var(--color-link-hover) 1px solid ;
 
 }
 
@@ -197,6 +200,7 @@ header {
     /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+    
 }
 
 a {
@@ -297,6 +301,7 @@ figure {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+    padding: 10px;
 }
 
 .card_paragraph {
@@ -414,9 +419,80 @@ figure {
 
 }
 
+.id_cards{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    
+
+}
+
+.id_cards-title{
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 30px;
+    color: var(--light-blue);
+
+}
 
 
+.id_cards1,
+.id_cards2,
+.id_cards3 {
+    display: inline-block;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+    flex-wrap: 5px;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;   
+    text-align: center; 
+}
 
+form{
+    width: 50%;
+    margin-top: 50px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 20px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
 
 
 /* MediasQueries */
@@ -440,7 +516,7 @@ figure {
 
 }
 
-/* Small devices (vertical tablets and large phones, 600px and up) */
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
 @media only screen and (min-width: 317px) {
     .nav_container {
         position: relative;
@@ -457,8 +533,8 @@ figure {
     }
 
     .nav_button {
-        margin-top: 2px;
-        padding: 4px 4px;
+        margin-top: 5px;
+        padding: 5px 5px;
 
     }
 
@@ -468,9 +544,9 @@ figure {
 
     .header_img {
         position: relative;
-        top: 1px;
-        width: 50px;
-        height: 50px;
+        top:8px;
+        width: 80px;
+        height: 60px;
 
     }
 
@@ -479,6 +555,12 @@ figure {
         top: -200px;
 
     }
+
+    .nav_mobile-menu{
+        width: 30px;
+        height: 30px;
+
+    } 
 
 
 }
