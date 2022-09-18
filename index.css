@@ -494,6 +494,49 @@ input[type=text], select, textarea {
     margin-top: 150px;
   }
 
+  /* Card app */
+.card_app{
+    display: flex;
+    width: 100%;
+    margin-top: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+  .card_app-container{
+    background-color:#D9D9D9;
+    width: 700px;
+    margin-top: 10px;
+    padding-top:10px ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card_app-link{
+   margin: 10px;
+   padding: 10px;
+   height: 40px;
+   width: 40px;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px;
+    z-index: 1;
+    flex-wrap: wrap;
+    background-color: #203b7b;
+  }
+.footer-icon{
+
+    width: 125px;
+    height: 75px;
+
+}
+
 
 /* MediasQueries */
 
@@ -559,9 +602,19 @@ input[type=text], select, textarea {
     .nav_mobile-menu{
         width: 30px;
         height: 30px;
+        margin-right: 5px;
 
     } 
 
+    .id_cards-title{
+        font-size: 20px;
+    }
+
+    .card_app{
+        margin: 25px;
+    }
+
+   
 
 }
 
