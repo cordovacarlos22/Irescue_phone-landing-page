@@ -580,6 +580,25 @@ input[type=text], select, textarea {
     height: 50px;
     margin: 5px;
 }
+
+.attribution { 
+    font-size: 25px; 
+    text-align: center;
+    background-color: var(--Cream);
+    width: auto;
+    height: auto;
+ }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+
+    
+    }
+
+    .attribution a:hover{
+        cursor: pointer;
+        color: var(--Dark-cyan);
+    }
 /* MediasQueries */
 
 /* Extra small devices (phones, 600px and less) */
