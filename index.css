@@ -1,3 +1,18 @@
+/* Site Stylesheet
+  1. NAV BAR 
+  2. HEADER IMG 
+  3. ARTICLE 
+  4. FIGURE CARD
+  5. SECTION 1 
+  6. SECTION 2
+  7. SECTION 3
+  8. contact us form 
+  9.Card app
+  10.FOOTER 
+  11.MediasQueries 
+======================================== */
+
+
 :root {
     --Very-dark-blue: hsl(233, 47%, 7%);
     --Dark-desaturated-blue: hsl(244, 38%, 16%);
@@ -32,6 +47,8 @@
 
 
 /* NAV BAR */
+/*======================================== */
+
 nav {
     position: fixed;
     display: flex;
@@ -123,6 +140,7 @@ nav {
 
 
 /* header img*/
+/*======================================== */
 header {
     width: 100%;
 
@@ -210,6 +228,7 @@ a {
 
 
 /* article */
+/*======================================== */
 .container_need-repair {
     width: 100%;
     display: inline-block;
@@ -323,6 +342,7 @@ figure {
 }
 
 /*SEECTION 1 */
+/*======================================== */
 .main_container1 {
     width: 100%;
 
@@ -362,6 +382,7 @@ figure {
 }
 
 /*section 2 */
+/*======================================== */
 .section_2 {
     width: 100%;
     display: flex;
@@ -397,6 +418,7 @@ figure {
 
 
 /*  section 3 */
+/*======================================== */
 .section_3 {
 
     justify-content: center;
@@ -452,7 +474,9 @@ figure {
     text-align: center; 
 }
 
-form{
+/*   contact us form */ 
+/*======================================== */
+ div > form { 
     width: 50%;
     margin-top: 50px;
 }
@@ -497,6 +521,7 @@ input[type=text], select, textarea {
   }
 
   /* Card app */
+  /*======================================== */
 .card_app{
     display: flex;
     width: 100%;
@@ -525,7 +550,8 @@ input[type=text], select, textarea {
   }
    
    
-  
+  /* FOOTER */
+  /*======================================== */
 
 
 .footer-icon{
@@ -600,6 +626,7 @@ input[type=text], select, textarea {
         color: var(--Dark-cyan);
     }
 /* MediasQueries */
+/*======================================== */
 
 /* Extra small devices (phones, 600px and less) */
 
