@@ -341,6 +341,10 @@ figure {
     cursor: pointer;
 }
 
+.catalog_botton:hover {
+    opacity: 0.75;
+  }
+
 /*SEECTION 1 */
 /*======================================== */
 .main_container1 {
