@@ -715,40 +715,7 @@ input[type=text], select, textarea {
 /* Small devices (vertical tablets and large phones, 600px and up) */
 @media only screen and (min-width: 590px) {
 
-    .nav_container {
-        position: relative;
-        top: -110px;
-    }
-
-    .header_title {
-        font-size: 30px;
-    }
-
-    .header_slogan {
-        font-size: 25px;
-    }
-
-    .nav_button {
-        margin: 5px;
-        padding: 5px 5px;
-
-    }
-
-    .nav-sub-menu {
-        display: none;
-    }
-
-    .header_img {
-        width: 150px;
-        height: 150px;
-        margin-top: 30px;
-
-    }
-
-    .container_need-repair {
-        position: relative;
-        top: 25px
-    }
+  
     
 
 }
@@ -758,39 +725,7 @@ input[type=text], select, textarea {
 /* Medium devices (horizontal tablets, 768px and above) */
 @media only screen and (min-width: 768px) {
 
-    .nav_container {
-        position: relative;
-        top: -70px;
-    }
-
-    .header_title {
-        font-size: 35px;
-    }
-
-    .header_slogan {
-        font-size: 30px;
-    }
-
-    .nav_button {
-        margin: 10px;
-        padding: 10px 10px;
-
-    }
-
-    .nav_mobile-menu {
-        display: none;
-    }
-
-    .nav-sub-menu {
-        display: flex;
-    }
-
-    .header_img {
-        width: 125px;
-        height: 125px;
-        margin-top: 60px;
-
-    }
+   
 
 
 
@@ -798,27 +733,7 @@ input[type=text], select, textarea {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .header_title {
-        font-size: 50px;
-    }
-
-    .header_slogan {
-        font-size: 45px;
-    }
-
-    .nav_button {
-        margin: 10px;
-        padding: 10px 10px;
-
-    }
-
-    .nav_mobile-menu {
-        display: none;
-    }
-
-    .nav-sub-menu {
-        display: flex;
-    }
+   
 
 }
 
@@ -826,27 +741,7 @@ input[type=text], select, textarea {
 
 /* Extra large devices (Large laptops and desktops, 1200px and above) */
 @media only screen and (min-width: 1000px) {
-    .header_title {
-        font-size: 60px;
-    }
-
-    .header_slogan {
-        font-size: 50px;
-    }
-
-    .nav_button {
-        margin: 10px;
-        padding: 10px 10px;
-
-    }
-
-    .nav_mobile-menu {
-        display: none;
-    }
-
-    .nav-sub-menu {
-        display: flex;
-    }
+    
 
 
 }
